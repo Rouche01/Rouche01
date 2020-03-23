@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeJS Assignment</title>
+</head>
+<style>
+    form {
+    margin: auto;
+    text-align: center;
+    margin-top: 180px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    width: 70%;
+    padding: 50px 30px;
+}
+
+textarea {
+    width: 300px;
+    margin: auto;
+    padding: 16px 20px;
+    border-radius: 5px;
+    border: 1px solid #d6d6c8;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    max-width: 500px;
+}
+
+textarea:focus {
+    box-shadow: 2px 2px 6px rgb(111, 24, 192);;
+}
+
+input[type='submit'] {
+    padding: 16px 20px;
+    background-color: blueviolet;
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+input[type='submit']:hover {
+    background-color: rgb(111, 24, 192);
+}
+</style>
+<body>
+    <form action="/message" method="POST">
+        <textarea name="message" rows="4" cols="50" placeholder="Enter your message here"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
